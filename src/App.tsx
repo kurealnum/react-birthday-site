@@ -32,6 +32,19 @@ function App() {
       <InfoContainer title="My Container">
         Some text that would go in my container. Blah blah blah.
       </InfoContainer>
+      <Image
+        fileNames={[defaultImage]}
+        altNames={["The last default image"]}
+      ></Image>
+      <SubHeader>Another image subheader</SubHeader>
+      <InfoContainer title="Another container">
+        Some text that would go in my container. Blah blah blah.
+      </InfoContainer>
+      <footer>
+        <MainHeader>My footer header</MainHeader>
+        <p>Some footer text!</p>
+        <Button onClickButton={tempFunc}>Scroll back up</Button>
+      </footer>
     </>
   );
 }
