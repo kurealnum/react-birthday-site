@@ -21,15 +21,20 @@ function App() {
   const name = "Name";
 
   // temp function
-  const tempFunc = () => {
-    console.log("Hello World");
+  const scrollTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  const scrollDown = () => {
+    window.scroll(0, document.body.scrollHeight);
   };
 
   return (
     <>
       <div className="title-section">
         <MainHeader>{"Happy Birthday, " + name}</MainHeader>
-        <Button onClickButton={tempFunc}>Scroll down</Button>
+        <Button onClickButton={scrollDown}>Scroll down</Button>
       </div>
       <div className="images">
         <Images fileNames={images} altNames={altNames}>
@@ -67,7 +72,7 @@ function App() {
           printer took a galley of type and scrambled it to make a type specimen
           book. It has survived not only five centuries,{" "}
         </p>
-        <Button onClickButton={tempFunc}>Scroll back up</Button>
+        <Button onClickButton={scrollTop}>Scroll back up</Button>
       </footer>
     </>
   );
