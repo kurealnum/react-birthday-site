@@ -6,7 +6,10 @@
   color: #FFFFFF;
   --primary: #502060;
   --secondary: #6554AF8f;
-  --accent: #de9cce;
+  --accent: #de9cceaf;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0 auto;
 }
 
 :root, body, #root {
@@ -29,7 +32,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  text-shadow: 4px 4px 6px var(--primary);
+  text-shadow: 6px 6px 5px var(--primary);
 }
 
 h2 {
@@ -80,8 +83,9 @@ button {
   padding: 8px 5px;
   border-radius: 24px;
   font-size: 17px;
-  background-color: var(--secondary);
+  background-color:var(--accent);
   border-color: transparent;
+  box-shadow: 0 0 6px 3px var(--secondary);
   color: #FFFFFF;
 }
 
