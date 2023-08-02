@@ -31,21 +31,37 @@ function App() {
         <MainHeader>{"Happy Birthday, " + name}</MainHeader>
         <Button onClickButton={tempFunc}>Scroll down</Button>
       </div>
-      <Images fileNames={images} altNames={altNames}>
-        My subheader text goes here
-      </Images>
+      <div className="top-images">
+        <Images fileNames={images} altNames={altNames}>
+          Subheading goes here. Lorem Ipsum is simply du
+        </Images>
+      </div>
       <InfoContainer title="My Container">
-        Some text that would go in my container. Blah blah blah.
+        Some information would go here: Lorem Ipsum is simply dummy text of the
+        printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has
+        survived not only five centuries,
       </InfoContainer>
       <Images fileNames={[defaultImage]} altNames={["The last default image"]}>
         My subheader text goes here
       </Images>
       <InfoContainer title="Another container">
-        Some text that would go in my container. Blah blah blah.
+        Some information would go here: Lorem Ipsum is simply dummy text of the
+        printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has
+        survived not only five centuries,
       </InfoContainer>
       <footer>
         <MainHeader>My footer header</MainHeader>
-        <p>Some footer text!</p>
+        <p>
+          Some information would go here: Lorem Ipsum is simply dummy text of
+          the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it to make a type specimen
+          book. It has survived not only five centuries,{" "}
+        </p>
         <Button onClickButton={tempFunc}>Scroll back up</Button>
       </footer>
     </>
