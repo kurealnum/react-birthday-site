@@ -17,6 +17,9 @@ function App() {
     "Yet another smiley face",
   ];
 
+  //change this to the receivers name
+  const name = "Name";
+
   // temp function
   const tempFunc = () => {
     console.log("Hello World");
@@ -25,7 +28,7 @@ function App() {
   return (
     <>
       <div className="title-section">
-        <MainHeader>My main Header</MainHeader>
+        <MainHeader>{"Happy Birthday, " + name}</MainHeader>
         <Button onClickButton={tempFunc}>Scroll down</Button>
       </div>
       <Images fileNames={images} altNames={altNames}>
