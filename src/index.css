@@ -5,7 +5,7 @@
   background-color: #100D11;
   color: #FFFFFF;
   --primary: #502060;
-  --secondary: #344B47;
+  --secondary: #6554AF8f;
   --accent: #de9cce;
 }
 
@@ -34,7 +34,7 @@ h1 {
 
 h2 {
   font-family: 'Nunito', sans-serif;
-  background-color: var(--primary);
+  background: linear-gradient(180deg, rgba(80,32,96,0.7) 0%, rgba(222,156,206,0.7) 100%);;
   font-weight: 300;
   padding: 10px 8px;
   font-size: 20px;
@@ -79,7 +79,7 @@ button {
   font-family: 'Nunito', sans-serif;
   padding: 8px 5px;
   border-radius: 24px;
-  font-size: 20px;
+  font-size: 17px;
   background-color: var(--secondary);
   border-color: transparent;
   color: #FFFFFF;
