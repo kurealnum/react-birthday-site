@@ -7,7 +7,7 @@ const Image = ({ fileNames, altNames }: Props) => {
   return (
     <>
       {fileNames.map((item, index) => (
-        <img src={item} alt={altNames[index]} key={item}></img>
+        <img src={item} alt={altNames[index]} key={index}></img>
       ))}
     </>
   );
