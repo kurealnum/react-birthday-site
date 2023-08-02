@@ -7,6 +7,14 @@ import Image from "./components/Image";
 import defaultImage from "./assets/defaultImage.jpg";
 
 function App() {
+  //images
+  const images = [defaultImage, defaultImage, defaultImage];
+  const altNames = [
+    "A smiley face",
+    "Another smiley face",
+    "Yet another smiley face",
+  ];
+
   // temp function
   const tempFunc = () => {
     console.log("Hello World");
@@ -16,7 +24,7 @@ function App() {
     <>
       <MainHeader>My main Header</MainHeader>
       <Button onClickButton={tempFunc}>Scroll down</Button>
-      <Image fileName={defaultImage} altName="Smiley face image"></Image>
+      <Image fileNames={images} altNames={altNames}></Image>
     </>
   );
 }

@@ -1,10 +1,16 @@
 interface Props {
-  fileName: string;
-  altName: string;
+  fileNames: string[];
+  altNames: string[];
 }
 
-const Image = ({ fileName, altName }: Props) => {
-  return <img src={fileName} alt={altName}></img>;
+const Image = ({ fileNames, altNames }: Props) => {
+  return (
+    <>
+      {fileNames.map((item, index) => (
+        <img src={item} alt={altNames[index]} key={item}></img>
+      ))}
+    </>
+  );
 };
 
 export default Image;
