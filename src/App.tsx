@@ -2,8 +2,7 @@
 import "./App.css";
 import MainHeader from "./components/MainHeader";
 import Button from "./components/Button";
-import Image from "./components/Image";
-import SubHeader from "./components/SubHeader";
+import Images from "./components/ImageCollection";
 import InfoContainer from "./components/InfoContainer";
 
 //asset imports
@@ -25,18 +24,19 @@ function App() {
 
   return (
     <>
-      <MainHeader>My main Header</MainHeader>
-      <Button onClickButton={tempFunc}>Scroll down</Button>
-      <Image fileNames={images} altNames={altNames}></Image>
-      <SubHeader>My image subheader</SubHeader>
+      <div className="title-section">
+        <MainHeader>My main Header</MainHeader>
+        <Button onClickButton={tempFunc}>Scroll down</Button>
+      </div>
+      <Images fileNames={images} altNames={altNames}>
+        My subheader text goes here
+      </Images>
       <InfoContainer title="My Container">
         Some text that would go in my container. Blah blah blah.
       </InfoContainer>
-      <Image
-        fileNames={[defaultImage]}
-        altNames={["The last default image"]}
-      ></Image>
-      <SubHeader>Another image subheader</SubHeader>
+      <Images fileNames={[defaultImage]} altNames={["The last default image"]}>
+        My subheader text goes here
+      </Images>
       <InfoContainer title="Another container">
         Some text that would go in my container. Blah blah blah.
       </InfoContainer>
