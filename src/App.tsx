@@ -7,8 +7,11 @@ import InfoContainer from "./components/InfoContainer";
 
 //asset imports
 import defaultImage from "./assets/defaultImage.jpg";
+import { useRef } from "react";
 
 function App() {
+  const ref = useRef(null);
+
   //images
   const images = [defaultImage, defaultImage, defaultImage];
   const altNames = [
@@ -27,7 +30,8 @@ function App() {
   };
 
   const scrollDown = () => {
-    window.scroll(0, document.body.scrollHeight);
+    // @ts-ignore
+    ref.current.scrollIntoView();
   };
 
   return (
@@ -36,7 +40,7 @@ function App() {
         <MainHeader>{"Happy Birthday, " + name}</MainHeader>
         <Button onClickButton={scrollDown}>Scroll down</Button>
       </div>
-      <div className="images">
+      <div className="images" ref={ref}>
         <Images fileNames={images} altNames={altNames}>
           Subheading goes here. Lorem Ipsum is simply du
         </Images>
