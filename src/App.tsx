@@ -31,7 +31,7 @@ function App() {
         <MainHeader>{"Happy Birthday, " + name}</MainHeader>
         <Button onClickButton={tempFunc}>Scroll down</Button>
       </div>
-      <div className="top-images">
+      <div className="images">
         <Images fileNames={images} altNames={altNames}>
           Subheading goes here. Lorem Ipsum is simply du
         </Images>
@@ -43,9 +43,14 @@ function App() {
         galley of type and scrambled it to make a type specimen book. It has
         survived not only five centuries,
       </InfoContainer>
-      <Images fileNames={[defaultImage]} altNames={["The last default image"]}>
-        My subheader text goes here
-      </Images>
+      <div className="images">
+        <Images
+          fileNames={[defaultImage]}
+          altNames={["The last default image"]}
+        >
+          My subheader text goes here
+        </Images>
+      </div>
       <InfoContainer title="Another container">
         Some information would go here: Lorem Ipsum is simply dummy text of the
         printing and typesetting industry. Lorem Ipsum has been the industry's
