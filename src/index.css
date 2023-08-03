@@ -42,7 +42,7 @@ h2 {
   border-style: solid;
   border-color: var(--primary);
   font-weight: 300;
-  padding: 10px 12px;
+  padding: 6px 12px;
   font-size: 20px;
   border-radius: 40px;
   max-width: 80%;
@@ -50,8 +50,7 @@ h2 {
 
 .images {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 18vh 0 18vh 0;
@@ -100,6 +99,7 @@ button {
 }
 
 footer p {
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -108,11 +108,17 @@ footer p {
   h1 {
     font-size: 56px;
   }
+  h2, .info-container {
+    max-width: 70%;
+  }
   button {
     font-size: 20px;
   }
   img {
     width: 60%;
+  }
+  footer p {
+    max-width: 80%;
   }
 }
 
@@ -126,6 +132,12 @@ footer p {
   img {
     width: 40%;
   }
+  .info-container {
+    max-width: 55%;
+  }
+  footer p {
+    max-width: 70%;
+  }
 }
 
 @media (min-width: 850px) {
@@ -135,6 +147,9 @@ footer p {
   button {
     font-size: 24px;
   }
+  footer p {
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 1200px){
@@ -143,5 +158,14 @@ footer p {
   }
   button {
     font-size: 25px;
+  }
+  img {
+    width: 30%;
+  }
+  .info-container {
+    max-width: 500px;
+  }
+  footer p {
+    max-width: 720px;
   }
 }
