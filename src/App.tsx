@@ -45,7 +45,7 @@ function App() {
           Subheading goes here. Lorem Ipsum is simply du
         </Images>
       </div>
-      <InfoContainer title="My Container">
+      <InfoContainer title="My Container" alignRight={false}>
         Some information would go here: Lorem Ipsum is simply dummy text of the
         printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a
@@ -60,7 +60,7 @@ function App() {
           My subheader text goes here
         </Images>
       </div>
-      <InfoContainer title="Another container">
+      <InfoContainer title="Another container" alignRight={true}>
         Some information would go here: Lorem Ipsum is simply dummy text of the
         printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s, when an unknown printer took a

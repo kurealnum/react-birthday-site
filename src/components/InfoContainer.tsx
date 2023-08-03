@@ -1,13 +1,23 @@
 interface containerProps {
   children: string;
   title: string;
+  alignRight: boolean;
 }
 
-const InfoContainer = ({ children, title }: containerProps) => {
+const InfoContainer = ({ children, title, alignRight }: containerProps) => {
   return (
     <div className="info-container">
-      <InfoContainerHeader>{title}</InfoContainerHeader>
-      <p>{children}</p>
+      {alignRight ? (
+        <>
+          <InfoContainerHeader>{title}</InfoContainerHeader>
+          <p className="align-right">{children}</p>
+        </>
+      ) : (
+        <>
+          <InfoContainerHeader>{title}</InfoContainerHeader>
+          <p>{children}</p>
+        </>
+      )}
     </div>
   );
 };
