@@ -32,20 +32,14 @@ h1, h2, h3 {
   font-size: 50px;
 }
 
-h1 {
-  text-shadow: 6px 6px 5px var(--primary);
-}
-
 h2 {
   font-family: 'Nunito', sans-serif;
-  background: var(--secondary);
-  border-style: solid;
-  border-color: var(--primary);
-  font-weight: 300;
+  font-weight: 200;
   padding: 6px 12px;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 40px;
   max-width: 80%;
+  margin: 0;
 }
 
 .images {
@@ -64,7 +58,8 @@ h2 {
   background-color: var(--secondary);
   margin: 18vh auto;
   width: 85%;
-  box-shadow: 0 0 10px 8px var(--accent);
+  border-style: solid;
+  border-color: var(--accent);
 }
 
 .align-right {
@@ -72,6 +67,7 @@ h2 {
 }
 
 h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
   font-size: 36px;
@@ -142,6 +138,9 @@ footer p {
   footer p {
     max-width: 70%;
   }
+  h2 {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 850px) {
@@ -154,6 +153,12 @@ footer p {
   footer p {
     max-width: 60%;
   }
+  .info-container {
+    max-width: 42%;
+  }
+  img {
+    width: 35%;
+  }
 }
 
 @media (min-width: 1200px){
@@ -164,7 +169,7 @@ footer p {
     font-size: 25px;
   }
   img {
-    width: 30%;
+    width: 380px;
   }
   .info-container {
     max-width: 500px;
