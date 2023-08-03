@@ -38,9 +38,11 @@ h1 {
 
 h2 {
   font-family: 'Nunito', sans-serif;
-  background: linear-gradient(180deg, rgba(80,32,96,0.7) 0%, rgba(222,156,206,0.7) 100%);;
+  background: var(--secondary);
+  border-style: ridge;
+  border-color: var(--primary);
   font-weight: 300;
-  padding: 10px 8px;
+  padding: 10px 12px;
   font-size: 20px;
   border-radius: 40px;
   max-width: 80%;
@@ -48,8 +50,10 @@ h2 {
 
 .images {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   padding: 18vh 0 18vh 0;
 }
 
@@ -61,7 +65,14 @@ h2 {
   background-color: var(--secondary);
   margin: 18vh auto;
   width: 85%;
-  box-shadow: 0 0 13px 8px var(--accent);
+  box-shadow: 0 0 10px 8px var(--accent);
+  text-align: left;
+}
+
+.info-container:nth-child(2) {
+  p {
+    text-align: right;
+  }
 }
 
 h3 {
@@ -76,6 +87,7 @@ p {
   padding: 10px;
   padding-bottom: 20px;
   margin: 0;
+  text-align: left;
 }
 
 img {
@@ -85,7 +97,7 @@ img {
 
 button {
   font-family: 'Nunito', sans-serif;
-  padding: 8px 5px;
+  padding: 8px 10px;
   border-radius: 24px;
   font-size: 17px;
   background-color:var(--accent);
@@ -98,3 +110,45 @@ footer p {
   text-align: center;
 }
 
+
+@media (min-width: 530px ){
+  h1 {
+    font-size: 56px;
+  }
+  button {
+    font-size: 20px;
+  }
+  img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 650px) {
+  img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 750px) {
+  img {
+    width: 40%;
+  }
+}
+
+@media (min-width: 850px) {
+  h1 {
+    font-size: 64px;
+  }
+  button {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px){
+  h1 {
+    font-size: 72px;
+  }
+  button {
+    font-size: 25px;
+  }
+}
